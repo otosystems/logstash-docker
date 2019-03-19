@@ -128,6 +128,7 @@ dockerfile: venv templates/Dockerfile.j2
 	    -D version_tag='$(VERSION_TAG)' \
 	    -D image_flavor='$(FLAVOR)' \
 	    -D artifacts_dir='$(ARTIFACTS_DIR)' \
+	    -D BASE_IMAGE='$(BASE_IMAGE)' \
 	    templates/Dockerfile.j2 > build/logstash/Dockerfile-$(FLAVOR); \
 	)
 

@@ -14,7 +14,7 @@
 {% endif -%}
 
 
-FROM centos:7
+FROM {{ BASE_IMAGE }}
 
 # Install Java and the "which" command, which is needed by Logstash's shell
 # scripts.
